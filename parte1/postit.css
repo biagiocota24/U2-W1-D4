@@ -1,36 +1,36 @@
 * {
   box-sizing: border-box;
 }
-/* @keyframes appariGiallini {
-      0% {
-        transform: translateY(-150vh) rotate(0turn);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0) rotate(calc(2turn - 10deg));
-        opacity: 1;
-      }
-    }
-    @keyframes appariVerdeacqua {
-      0% {
-        transform: translateY(-150vh) rotate(0turn);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0) rotate(calc(2turn + 10deg));
-        opacity: 1;
-      }
-    }
-    @keyframes appariViola {
-      0% {
-        transform: translateY(-150vh) rotate(0turn);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0) rotate(calc(2turn - 15deg));
-        opacity: 1;
-      }
-    } */
+@keyframes appariGiallini {
+  0% {
+    transform: translateY(-150vh) rotate(0turn);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(calc(2turn - 10deg));
+    opacity: 1;
+  }
+}
+@keyframes appariVerdeacqua {
+  0% {
+    transform: translateY(-150vh) rotate(0turn);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(calc(2turn + 10deg));
+    opacity: 1;
+  }
+}
+@keyframes appariViola {
+  0% {
+    transform: translateY(-150vh) rotate(0turn);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(calc(2turn - 15deg));
+    opacity: 1;
+  }
+}
 main {
   background-color: #969696;
   padding: 3em 2em;
@@ -51,10 +51,10 @@ main {
   gap: 1em;
   padding: 2em;
   transition: all 0.1s linear;
-  opacity: 1;
+  opacity: 0;
 }
 .foglietto:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) !important;
 }
 .foglietto h2 {
   font-family: "Indie Flower", cursive;
@@ -70,19 +70,19 @@ main {
   background-color: bisque;
   transition: all 0.1s linear;
   transform: rotate(-15deg);
-  /* animation: appariGiallini 1s linear forwards; */
+  animation: appariGiallini 1s linear forwards;
 }
 .verdeacqua {
   background-color: aquamarine;
   transition: all 0.1s linear;
   transform: rotate(10deg);
-  /* animation: appariVerdeacqua 1s linear forwards; */
+  animation: appariVerdeacqua 1s linear forwards;
 }
 .viola {
   background-color: blueviolet;
   transition: all 0.1s linear;
   transform: rotate(15deg);
-  /* animation: appariViola 1s linear forwards; */
+  animation: appariViola 1s linear forwards;
 }
 .foglietto:nth-of-type(8) {
   animation-delay: 0.1s;
