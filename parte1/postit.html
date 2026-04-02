@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <title>Esempio di lavagna con Post It</title>
+    <meta
+      name="description"
+      content="Creazione di una lavagna con post animati al rollover"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Trispace:wght@100..800&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="postit.css" />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    /* @keyframes appariGiallini {
+      0% {
+        transform: translateY(-150vh) rotate(0turn);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0) rotate(calc(2turn - 10deg));
+        opacity: 1;
+      }
+    }
+    @keyframes appariVerdeacqua {
+      0% {
+        transform: translateY(-150vh) rotate(0turn);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0) rotate(calc(2turn + 10deg));
+        opacity: 1;
+      }
+    }
+    @keyframes appariViola {
+      0% {
+        transform: translateY(-150vh) rotate(0turn);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0) rotate(calc(2turn - 15deg));
+        opacity: 1;
+      }
+    } */
+    main {
+      background-color: #969696;
+      padding: 3em 2em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 3em;
+    }
+    .foglietto {
+      width: 230px;
+      height: 200px;
+      border: 1px solid black;
+      box-shadow: 2px 2px 10px 2px black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1em;
+      padding: 2em;
+      transition: all 0.1s linear;
+      opacity: 1;
+    }
+    .foglietto:hover {
+      transform: scale(1.2);
+    }
+    .foglietto h2 {
+      font-family: "Indie Flower", cursive;
+      font-weight: 900;
+      font-size: 2.5em;
+    }
+    .foglietto p {
+      font-family: "Coming Soon", cursive;
+      font-weight: 100;
+      font-size: 1.6em;
+    }
+    .giallino {
+      background-color: bisque;
+      transition: all 0.1s linear;
+      transform: rotate(-15deg);
+      /* animation: appariGiallini 1s linear forwards; */
+    }
+    .verdeacqua {
+      background-color: aquamarine;
+      transition: all 0.1s linear;
+      transform: rotate(10deg);
+      /* animation: appariVerdeacqua 1s linear forwards; */
+    }
+    .viola {
+      background-color: blueviolet;
+      transition: all 0.1s linear;
+      transform: rotate(15deg);
+      /* animation: appariViola 1s linear forwards; */
+    }
+    .foglietto:nth-of-type(8) {
+      animation-delay: 0.1s;
+    }
+    .foglietto:nth-of-type(3) {
+      animation-delay: 0.2s;
+    }
+    .foglietto:nth-of-type(7) {
+      animation-delay: 0.3s;
+    }
+    .foglietto:nth-of-type(6) {
+      animation-delay: 0.4s;
+    }
+    .foglietto:nth-of-type(2) {
+      animation-delay: 0.5s;
+    }
+    .foglietto:nth-of-type(4) {
+      animation-delay: 0.6s;
+    }
+    .foglietto:nth-of-type(5) {
+      animation-delay: 0.7s;
+    }
+  </style>
+  <body>
+    <main>
+      <div class="foglietto giallino">
+        <h2>Task #1</h2>
+        <p>creare i postit</p>
+      </div>
+      <div class="foglietto verdeacqua">
+        <h2>Task #1</h2>
+        <p>creare i postit</p>
+      </div>
+      <div class="foglietto viola">
+        <h2>Task #1</h2>
+        <p>creare i postit</p>
+      </div>
+      <div class="foglietto giallino">
+        <h2>Task #1</h2>
+        <p>creare i postit</p>
+      </div>
+      <div class="foglietto viola">
+        <h2>Task #1</h2>
+        <p>creare i postit</p>
+      </div>
+      <div class="foglietto verdeacqua">
+        <h2>Task #1</h2>
+        <p>creare i postit</p>
+      </div>
+      <div class="foglietto giallino">
+        <h2>Task #1</h2>
+        <p>creare i postit</p>
+      </div>
+      <div class="foglietto verdeacqua">
+        <h2>Task #1</h2>
+        <p>creare i postit</p>
+      </div>
+    </main>
+    <!-- <script>
+      const foglietti = document.querySelectorAll(".foglietto");
+      foglietti.forEach((foglio) => {
+        foglio.addEventListener("mouseenter", function () {
+          foglio.style.transform = "scale(1.3)";
+          foglio.style.zIndex = "10";
+        });
+        foglio.addEventListener("mouseleave", function () {
+          foglio.style.transform = "";
+          foglio.style.zIndex = "";
+        });
+      });
+    </script> -->
+  </body>
+</html>
