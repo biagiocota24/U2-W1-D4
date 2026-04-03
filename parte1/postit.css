@@ -50,7 +50,8 @@ main {
   align-items: flex-start;
   gap: 1em;
   padding: 2em;
-  transition: all 0.1s linear;
+  transition: transform 0.5s linear !important;
+  transition: all 0.1s linear !important;
   opacity: 0;
 }
 .foglietto:hover {
@@ -103,5 +104,26 @@ main {
   animation-delay: 0.6s;
 }
 .foglietto:nth-of-type(5) {
+  animation-delay: 0.7s;
+}
+.foglietto:nth-of-type(9) {
+  animation-delay: 0.1s;
+}
+.foglietto:nth-of-type(10) {
+  animation-delay: 0.2s;
+}
+.foglietto:nth-of-type(11) {
+  animation-delay: 0.3s;
+}
+.foglietto:nth-of-type(12) {
+  animation-delay: 0.4s;
+}
+.foglietto:nth-of-type(13) {
+  animation-delay: 0.5s;
+}
+.foglietto:nth-of-type(14) {
+  animation-delay: 0.6s;
+}
+.foglietto:nth-of-type(15) {
   animation-delay: 0.7s;
 }
